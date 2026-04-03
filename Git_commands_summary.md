@@ -71,6 +71,19 @@ git config --global core.editor "code --wait" # set VS Code as default editor
 
 ---
 
+\*\*gitignore
+
+```bash
+touch .gitignore # create the .gitignore file
+git rm --cached filename.txt # stop tracking an already pushed file
+git status # verify ignored files don't appear
+# Patterns inside .gitignore
+secret.txt                        # ignore a specific file
+*.pyc                             # ignore all files with this extension
+venv/                             # ignore an entire folder
+!important.txt                    # exception — track this despite above rules
+```
+
 **The 3 commands you use every single day:**
 
 ```bash
