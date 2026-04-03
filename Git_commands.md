@@ -83,10 +83,23 @@ git commit -m "Add email validation to signup"
    git long -n <number of commits>
 
 6. git rm: remove file from project, and record it
-   # delete file or directory
+
+   # delete file or directory from computer
+
    git rm <file name>
    git rm -r <directory name>
-   # cache file
+
+   # stop tracking a file but keeping it on computer
+
    git rm --cached
+
+7. git mv: rename or move a file.
+
+   # Renames and moves a file
+
+```bash
+   git mv oldname.txt newname.txt          # rename
+   git mv filename.txt subfolder/          # move to a folder
+```
 
 # Rabbit rabbit bear bear seal seal
